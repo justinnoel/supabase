@@ -1261,7 +1261,7 @@ pages:
         description: You can process large payloads at once using [array parameters](https://postgrest.org/en/stable/api.html#calling-functions-with-array-parameters).
         js: |
           ```js
-          const { data, error } = await postgrest
+          const { data, error } = await supabase
             .rpc('echo_cities', { names: ['The Shire', 'Mordor'] })
           ```
       - name: With filters
